@@ -1,30 +1,28 @@
 import React from "react";
-import "./Footer.css";
-import us from "../assets/United States of America (Us).png";
-import star from "../assets/Star 1.png";
+import apay from "../assets/apple.png";
 import instalink from "../assets/Frame 28.png";
 import gpay from "../assets/gpay.png";
-import master from "../assets/redor.png";
-import pp from "../assets/pp.png";
-import amex from "../assets/vector.png";
-import apay from "../assets/apple.png";
 import pay from "../assets/pay.png";
-
-
+import pp from "../assets/pp.png";
+import master from "../assets/redor.png";
+import star from "../assets/Star 1.png";
+import us from "../assets/United States of America (Us).png";
+import amex from "../assets/vector.png";
+import "./footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
-        <div className="footer-top">
-      <div className="newsletter">
-        <h3>BE THE FIRST TO KNOW</h3>
-        <p>Sign up for updates from mettā muse.</p>
-        <div className="newsletter-input">
-          <input type="email" placeholder="Enter your e-mail..." />
-          <button>SUBSCRIBE</button>
+      <div className="footer-top">
+        <div className="newsletter">
+          <h3>BE THE FIRST TO KNOW</h3>
+          <p>Sign up for updates from mettā muse.</p>
+          <div className="newsletter-input">
+            <input type="email" placeholder="Enter your e-mail..." />
+            <button>SUBSCRIBE</button>
+          </div>
         </div>
-      </div>
-      <div className="footer-column contact-currency">
+        <div className="footer-column contact-currency">
           <div className="contact-info">
             <h4>CONTACT US</h4>
             <p>+44 221 133 5360</p>
@@ -33,9 +31,9 @@ const Footer = () => {
           <div className="currency-info">
             <h4>CURRENCY</h4>
             <div className="currency-icon">
-                <img src={us} alt="US" className="us-img" /> 
-                <img src={star} alt="star" className="star-img" /> 
-                 <p>USD</p>
+              <img src={us} alt="US" className="us-img" />
+              <img src={star} alt="star" className="star-img" />
+              <p>USD</p>
             </div>
             <p>
               Transactions will be completed in Euros and a currency reference
@@ -43,7 +41,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        </div>
+      </div>
       <div className="footer-divider" />
 
       <div className="footer-main">
@@ -76,7 +74,6 @@ const Footer = () => {
           <h4>FOLLOW US</h4>
           <div className="social-icons">
             <img src={instalink} className="fa-brands fa-instagram" />
-            
           </div>
 
           <h4>mettā muse ACCEPTS</h4>
