@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background-color: #000;
+  color: #c33;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 274px;
+  padding-right: 274px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.top-message {
+  display: flex;
+  align-items: center;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background-color: #fff;
+}
+
+.icon-logo {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.main-logo {
+  height: 35.61px;
+  width: 35.61;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.lang-select {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.arrow-icon {
+  width: 8px;
+  height: 8px;
+}
+
+.nav-bar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 14px 0;
+  margin: 0;
+}
+
+.nav-bar li {
+  padding-top: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+.header-center {
+  width: 107px;
+  height: 44px;
+  font-size: 36px;
+  font-weight: 800;
+  padding-left: 170px;
+}
+.hover-underline {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+}
+
+.login-link {
+  margin-left: 10px;
+  padding: 6px 12px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.login-link:hover {
+  background-color: #555;
+}
+.signup-link {
+  margin-left: 10px;
+  padding: 6px 12px;
+  background-color: #666;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.signup-link:hover {
+  background-color: #888;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    padding-left: 10px; /* Reduced left padding */
+    padding-right: 10px; /* Reduced right padding */
+    flex-direction: column; /* Stack top messages vertically */
+    align-items: center; /* Center items */
+  }
+
+  .top-message {
+    margin-bottom: 5px; /* Add some space between stacked messages */
+  }
+
+  .main-header {
+    padding: 10px 15px; /* Further reduced padding */
+  }
+
+  .header-center {
+    padding-left: 0; /* Remove left padding */
+  }
+
+  .header-right {
+    gap: 5px; /* Further reduced gap */
+  }
+
+  .nav-bar ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center; /* Center navigation items */
+    gap: 10px; /* Reduced gap for stacked items */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .nav-bar li {
+    padding-top: 0; /* Ensure no extra top padding */
+    margin-bottom: 5px; /* Adjust bottom margin */
+    font-size: 18px; /* Slightly larger for better touch */
+  }
+
+  .header-right .login-link,
+  .header-right .signup-link {
+    margin-left: 5px; /* Maintain spacing */
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .main-header {
+    flex-direction: column; /* Stack logo and right elements */
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-center {
+    margin-bottom: 10px;
+  }
+
+  .header-right {
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 5px;
+  }
+
+  .nav-bar ul {
+    padding: 18px;
+  }
+
+  .nav-bar li {
+    font-size: 16px;
+  }
+}
