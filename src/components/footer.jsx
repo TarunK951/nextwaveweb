@@ -6,7 +6,7 @@ import pay from "../assets/pay.png";
 import pp from "../assets/pp.png";
 import master from "../assets/redor.png";
 import star from "../assets/Star 1.png";
-import us from "../assets/United States of America (Us).png";
+import us from "../assets/United States of America (US).png";
 import amex from "../assets/Vector.png";
 import "./footer.css";
 
