@@ -7,7 +7,7 @@ import pp from "../assets/pp.png";
 import master from "../assets/redor.png";
 import star from "../assets/Star 1.png";
 import us from "../assets/United States of America (Us).png";
-import amex from "../assets/vector.png";
+import amex from "../assets/Vector.png";
 import "./footer.css";
 
 const Footer = () => {
